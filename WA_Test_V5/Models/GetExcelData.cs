@@ -58,6 +58,8 @@ namespace WA_Test_V5.GetData.Excel
             var numberOfRows = dataSheet.Dimension.End.Row;
             var numberOfCols = dataSheet.Dimension.End.Column;
             ExcelRange Cells = dataSheet.Cells;
+            // Сортировка данных таблицы, чтобы в дереве все значения были отсортированы
+            Cells["A2:J"].Sort(new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }, new bool[] { false, false, false, false, false, false, false, false, false, false });
             var _TreeViewNew = new List<TreeViewElements>();
             int count = 1; // Уникальный индекс (обычный счетчик-инкремент)
 
