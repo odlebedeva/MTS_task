@@ -41,6 +41,7 @@ namespace WA_Test_V5.GetData.Excel
         }
     }
     public class GetExcelDataNew
+    // был обновлен пакет EPPlus до версии 4.5.3.3 (чтобы отсортировать данные в таблице)
     {
         private ExcelPackage pack;
         private string path;
